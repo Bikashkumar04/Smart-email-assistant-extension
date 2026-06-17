@@ -1,0 +1,82 @@
+.smart-email-assistant-ai-reply {
+  align-items: center;
+  background-color: #1a73e8;
+  border: 1px solid #1a73e8;
+  border-radius: 18px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  height: 32px;
+  justify-content: center;
+  line-height: 20px;
+  margin-left: 8px;
+  min-width: 76px;
+  padding: 0 14px;
+  transition:
+    background-color 120ms ease,
+    border-color 120ms ease,
+    box-shadow 120ms ease,
+    opacity 120ms ease;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.smart-email-assistant-ai-reply img {
+  height: 16px;
+  margin-right: 6px;
+  width: 16px;
+}
+
+.smart-email-assistant-ai-reply:hover:not(:disabled) {
+  background-color: #185abc;
+  border-color: #185abc;
+  box-shadow: 0 1px 2px rgba(60, 64, 67, 0.25);
+}
+
+.smart-email-assistant-ai-reply:focus-visible {
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 4px #1a73e8;
+  outline: none;
+}
+
+.smart-email-assistant-ai-reply:disabled,
+.smart-email-assistant-ai-reply.smart-email-assistant-loading {
+  background-color: #5f8fd6;
+  border-color: #5f8fd6;
+  box-shadow: none;
+  cursor: default;
+  opacity: 0.72;
+}
+
+.smart-email-assistant-button-row {
+  align-items: center;
+  display: flex;
+  margin-top: 8px;
+}
+
+.smart-email-assistant-toolbar-slot {
+  align-items: center;
+  display: inline-flex;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.smart-email-assistant-toolbar-slot .smart-email-assistant-ai-reply {
+  margin-left: 0;
+}
+
+.smart-email-assistant-error {
+  color: #b3261e;
+  display: inline-block;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: 8px;
+  max-width: 220px;
+  vertical-align: middle;
+}
